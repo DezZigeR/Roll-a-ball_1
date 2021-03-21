@@ -5,21 +5,29 @@ namespace Geekbrains
 {
 	public sealed class RadarObj : MonoBehaviour
 	{
-		[SerializeField] private Image _ico;
+		private Image _ico;
+		private Radar _radar;
 
-        private void OnValidate()
-        {
-            _ico = Resources.Load<Image>("MiniMap/RadarObject");
-        }
-
-        private void OnDisable()
+		private void Awake()
 		{
-			Radar.RemoveRadarObject(gameObject);
+			_ico = Resources.Load<Image>("MiniMap/RadarObject");
 		}
 
-		private void OnEnable()
+		private void OnValidate()
 		{
-			Radar.RegisterRadarObject(gameObject, _ico);
+			_ico = Resources.Load<Image>("MiniMap/RadarObject");
+		}
+
+		private void OnDisable()
+		{
+			_radar.RemoveRadarObject(gameObject);
+		}
+
+		
+		public void SetRadar(Radar radar)
+		{
+			_radar = radar;
+			_radar.RegisterRadarObject(gameObject, _ico);
 		}
 	}
 }

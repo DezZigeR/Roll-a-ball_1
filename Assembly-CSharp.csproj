@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{4998094E-7863-059C-6724-E3E85F91DE9D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -73,7 +74,9 @@
     <Compile Include="Assets\Scripts\SaveData\BinarySerializationData.cs" />
     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
     <Compile Include="Assets\Scripts\SaveData\NewDirectory1\Repository.Hp.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveBadDataRepository.cs" />
     <Compile Include="Assets\Scripts\SaveData\SaveDataRepository.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveGoodDataRepository.cs" />
     <Compile Include="Assets\Scripts\View\DisplayEndGame.cs" />
     <Compile Include="Assets\Scripts\Helper\Reference.cs" />
     <Compile Include="Assets\Scripts\Model\PlayerBase.cs" />

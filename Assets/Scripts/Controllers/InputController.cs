@@ -10,7 +10,9 @@ namespace Geekbrains
         private readonly KeyCode _savePlayer = KeyCode.C;
         private readonly KeyCode _loadPlayer = KeyCode.V;
         private readonly Repository _repository;
-        
+        private readonly SaveGoodDataRepository _saveGoodDataRepository;
+        private readonly SaveBadDataRepository _saveBadDataRepository;
+
         public InputController(PlayerBase player)
         {
             _playerBase = player;
@@ -19,6 +21,8 @@ namespace Geekbrains
             _repository = new Repository();
             new ControllerTest1(_repository);
             new ControllerTest2(_repository);
+            _saveGoodDataRepository = new SaveGoodDataRepository();
+            _saveBadDataRepository = new SaveBadDataRepository();
         }
 
         public void Execute()
@@ -27,12 +31,49 @@ namespace Geekbrains
 
             if (Input.GetKeyDown(_savePlayer))
             {
-                _saveDataRepository.Save(_playerBase);
+                _interactiveObject = new ListExecuteObject();
+                int goodBonusNumber = 0;
+                int bedBonusNumber = 0;
+                foreach (var o in _interactiveObject)
+                {
+                    if (o is GoodBonus goodBonus)
+                    {
+                        //Debug.Log(goodBonus.name + goodBonusNumber);
+                        _saveGoodDataRepository.Save(goodBonus, goodBonusNumber);
+                        goodBonusNumber += 1;
+                    }
+                    if (o is BadBonus badBonus) //добить
+                    {
+                        //Debug.Log(badBonus.name + bedBonusNumber);
+                        _saveBadDataRepository.Save(badBonus, bedBonusNumber);
+                        bedBonusNumber += 1;
+                    }
+                    _saveDataRepository.Save(_playerBase);
+                }
             }
             if (Input.GetKeyDown(_loadPlayer))
             {
-                _saveDataRepository.Load(_playerBase);
+                _interactiveObject = new ListExecuteObject();
+                int goodBonusNumber = 0;
+                int badBonusNumber = 0;
+                foreach (var o in _interactiveObject)
+                {
+                    if (o is GoodBonus goodBonus)
+                    {
+                        //Debug.Log(goodBonus.name + goodBonusNumber);
+                        _saveGoodDataRepository.Load(goodBonus, goodBonusNumber);
+                        goodBonusNumber += 1;
+                    }
+                    if (o is BadBonus badBonus) //добить
+                    {
+                        _saveBadDataRepository.Load(badBonus, badBonusNumber);
+                        goodBonusNumber += 1;
+
+                    }
+                    _saveDataRepository.Load(_playerBase);
+                }
             }
         }
     }
+
 }
