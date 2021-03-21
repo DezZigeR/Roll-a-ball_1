@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Любовь\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Любовь\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Roll a ball.1449330609.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Любовь\Desktop\Roll a ball" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="rec.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="BadBonus.cs" t="Include" />
+          <e p="Controllers" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="GameController.cs" t="Include" />
+            <e p="InputController.cs" t="Include" />
+            <e p="PhotoController.cs" t="Include" />
+          </e>
+          <e p="Enumes" t="Include">
+            <e p="PlayerType.cs" t="Include" />
+          </e>
+          <e p="GoodBonus.cs" t="Include" />
+          <e p="Helper" t="Include">
+            <e p="Crypto.cs" t="Include" />
+            <e p="Extensions.cs" t="Include" />
+            <e p="Reference.cs" t="Include" />
+          </e>
+          <e p="InteractiveObject.cs" t="Include" />
+          <e p="Interface" t="Include">
+            <e p="IExecute.cs" t="Include" />
+            <e p="IFlay.cs" t="Include" />
+            <e p="IFlicker.cs" t="Include" />
+            <e p="IInitialization.cs" t="Include" />
+            <e p="IRotation.cs" t="Include" />
+          </e>
+          <e p="ListExecuteObject.cs" t="Include" />
+          <e p="MiniMap" t="Include">
+            <e p="MiniMap.cs" t="Include" />
+            <e p="Radar.cs" t="Include" />
+            <e p="RadarObj.cs" t="Include" />
+          </e>
+          <e p="Model" t="Include">
+            <e p="PlayerBall.cs" t="Include" />
+            <e p="PlayerBase.cs" t="Include" />
+          </e>
+          <e p="SaveData" t="Include">
+            <e p="BinarySerializationData.cs" t="Include" />
+            <e p="IData.cs" t="Include" />
+            <e p="JsonData.cs" t="Include" />
+            <e p="PlayerPrefsData.cs" t="Include" />
+            <e p="SaveDataRepository.cs" t="Include" />
+            <e p="SavedData.cs" t="Include" />
+            <e p="SerializableXMLData.cs" t="Include" />
+            <e p="StreamData.cs" t="Include" />
+            <e p="XMLData.cs" t="Include" />
+          </e>
+          <e p="Test.cs" t="Include" />
+          <e p="View" t="Include">
+            <e p="DisplayBonuses.cs" t="Include" />
+            <e p="DisplayEndGame.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Roll a ball.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
