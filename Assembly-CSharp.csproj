@@ -57,6 +57,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Editor\CreateCone.cs" />
+    <Compile Include="Assets\Scripts\Editor\CreateWayPointEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\MenuItems.cs" />
+    <Compile Include="Assets\Scripts\Editor\MyMenuItems.cs" />
+    <Compile Include="Assets\Scripts\Editor\MyWindow.cs" />
+    <Compile Include="Assets\Scripts\Editor\MyWindow2.cs" />
+    <Compile Include="Assets\Scripts\Editor\MyWindowEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\TestBehaviourEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\TestTowEditor.cs" />
     <Compile Include="Assets\Scripts\Helper\Extensions.cs" />
     <Compile Include="Assets\Scripts\SaveData\JsonData.cs" />
     <Compile Include="Assets\Scripts\MiniMap\RadarObj.cs" />
@@ -663,6 +672,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Scripts\Editor\CreateCone.cs.meta" />
+    <None Include="Assets\Scripts\Editor\CreateWayPointEditor.cs.meta" />
+    <None Include="Assets\Scripts\Editor\MenuItems.cs.meta" />
+    <None Include="Assets\Scripts\Editor\MyWindow.cs.meta" />
+    <None Include="Assets\Scripts\Editor\TestBehaviourEditor.cs.meta" />
+    <None Include="Assets\Scripts\Editor\TestTowEditor.cs.meta" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

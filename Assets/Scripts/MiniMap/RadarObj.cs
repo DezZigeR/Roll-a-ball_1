@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Geekbrains
 {
-	public sealed class RadarObj : MonoBehaviour
+	public sealed class RadarObj : IExecute
 	{
 		private Image _ico;
 		private Radar _radar;
